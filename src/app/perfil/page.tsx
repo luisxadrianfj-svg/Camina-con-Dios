@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import { UserRound } from 'lucide-react';
+import { PageHeading, DemoNotice } from '@/components/ui';
+import { Preferences } from '@/components/preferences';
+export default function Profile(){return <div className="page narrow"><PageHeading eyebrow="PERFIL Y PREFERENCIAS" title="Tu camino, a tu manera." description="Ajusta la experiencia para leer con más comodidad."/><DemoNotice>Perfil de visitante. No hay registro ni autenticación. Las preferencias solo se mantienen mientras exploras esta sesión.</DemoNotice><section className="card"><div className="profile-summary"><span className="welcome-icon"><UserRound size={30}/></span><div><h2>Visitante</h2><p>Un espacio abierto, sin cuenta.</p></div></div><Preferences/></section><section className="card sample-entry"><h3>Una fe, muchos caminos</h3><p>Respetamos distintas tradiciones cristianas. No necesitas seleccionar una denominación para utilizar la aplicación.</p><Link href="/bienvenida" className="subtle-link">Volver a la bienvenida →</Link></section></div>}

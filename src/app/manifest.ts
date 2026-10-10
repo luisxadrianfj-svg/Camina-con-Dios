@@ -1,0 +1,2 @@
+import type { MetadataRoute } from 'next';
+export default function manifest(): MetadataRoute.Manifest {return {name:'Camina con Dios',short_name:'Camina',description:'Acompañamiento espiritual diario · demostración',start_url:'/bienvenida',display:'standalone',background_color:'#f8f7f2',theme_color:'#365647',lang:'es',icons:[{src:'/icon-192.png',sizes:'192x192',type:'image/png'},{src:'/icon-512.png',sizes:'512x512',type:'image/png'},{src:'/icon.svg',sizes:'any',type:'image/svg+xml',purpose:'any'}]};}

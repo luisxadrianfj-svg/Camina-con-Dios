@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import { Sprout, ArrowRight, HeartHandshake } from 'lucide-react';
+import { Preferences } from '@/components/preferences';
+import { DemoNotice, PageHeading } from '@/components/ui';
+export default function Welcome(){return <div className="welcome page"><section className="welcome-intro"><span className="welcome-icon"><Sprout size={42}/></span><PageHeading eyebrow="BIENVENIDO A TU CAMINO" title="Un pequeño paso. Un encuentro cada día." description="Un espacio para leer, comprender y reflexionar sobre tu fe, con calma y a tu ritmo."/><p className="inclusive"><HeartHandshake size={22}/>Para personas de distintas tradiciones cristianas, adolescentes y adultos.</p><DemoNotice/></section><section className="card welcome-settings"><h2>Hagamos espacio para ti</h2><p>Elige cómo quieres explorar esta experiencia.</p><Preferences/><Link href="/inicio" className="button">Comenzar mi camino <ArrowRight size={18}/></Link><Link className="subtle-link" href="/inicio">Explorar con la configuración inicial</Link></section></div>}
